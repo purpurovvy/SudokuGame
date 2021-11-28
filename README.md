@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Sudoku Game 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app is written in: React, Redux, Typescript, Styled-components technolgies. It generate a new sudoku game every time you visit the page.
+There is an option to create own game if correct schema will be provided. <br />
+Please keep in mind that board is 9x9 so maximum index of column and row is 8. The maximum value in block is 9.<br />
+That's why wrong inputs will be omitted eg. "[10][0]:2" or "[0][0]:10".<br />
 
-## Available Scripts
+## Project structure
 
-In the project directory, you can run:
+All components are in catalogue "components". There is special subcataloge "styled-components" which contains generic components used in whole project. You can spotted them later with prefix S e.g. <S.Container>.
+The biggest components base on 3 files: 
 
-### `yarn start`
+  - Name}.tsx - core part of component which is exported
+  
+  - {Name}Styled.ts - styling parts which are use only in particular component
+  
+  - use{Name}.ts - contains logic of component
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Catalog global contains global theme, values and typings used across of project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Catalog store include whole logic for Redux
 
-### `yarn test`
+Catalog sudokuLogic embrace all logic which responsible for algorithms in the game + tests.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Catalog utils currently have only one utils which is regex function. However maybe it will be extended in feature.
 
-### `yarn build`
+## Project installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The installation process is typical for any React application: </br>
+1. Download code </br>
+2. npm install </br>
+3. npm run start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Enjoy and have fun! Url: https://purpurovvy.github.io/SudokuGame/ 😄
