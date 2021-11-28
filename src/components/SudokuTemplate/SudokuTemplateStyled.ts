@@ -21,5 +21,5 @@ export const TemplateInputStyled = styled.textarea`
 
 export const SudokuTemplateFormStyled = styled.form`
   display: flex;
-  flexDirection: column;
+  flexdirection: column;
 `;

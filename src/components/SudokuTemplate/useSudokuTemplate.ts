@@ -19,12 +19,12 @@ export const useSudokuTemplate = () => {
       const sudokuTemplateObj = JSON.parse(sudokuTemplateInput);
       const values = filterValidInputs(sudokuTemplateObj);
       if (Object.keys(values).length === 0) {
-        const errorMsg = 'Input doesn\'t have valid values';
+        const errorMsg = "Input doesn't have valid values";
         throw errorMsg;
       }
       return values;
     } catch (error) {
-      setErrorMessage(typeof error === 'string' ? error : 'Your template doesn\'t fit schema');
+      setErrorMessage(typeof error === 'string' ? error : "Your template doesn't fit schema");
       console.error(error);
     }
   };

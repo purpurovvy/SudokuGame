@@ -1,5 +1,5 @@
 import React from 'react';
-import { SudokuTemplateStyled, TemplateInputStyled,SudokuTemplateFormStyled } from './SudokuTemplateStyled';
+import { SudokuTemplateStyled, TemplateInputStyled, SudokuTemplateFormStyled } from './SudokuTemplateStyled';
 import { S, Notification } from 'components';
 import { useSudokuTemplate } from './useSudokuTemplate';
 
